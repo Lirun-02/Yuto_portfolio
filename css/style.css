@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/*　共通部分 */
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "kameron";
+    line-height: 1.7;
+    color: #F6F7F6;
+    background-color: #37343C;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* 便利class */
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.normal-font {
+    font-weight: normal;
+}
+
+/* コンテナ */
+.container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 2.5rem;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 1.5rem;
+    place-content: center;
+}
+
+/* ヘッダー */
+/* 「ヘッダー」ブロック内のコンテナ*/
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 縦方向の中央ぞろえ */
+}
+.works {
+    background-color: #4b8190;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 2.5rem;
+    list-style: none;
+}
+.logo {
+    color: #f6f7f6;
+    font-size: 2.5rem;
+}
+.works-logo {
+    color: #37343C;
+    font-size: 2.5rem;
+}
+.main-nav a {
+    color: #4b8190;
+}
+.works-nav a {
+    color: #f6f7f6;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+.main-video{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+}
+.works-title {
+    color: #F6F7F6;
+    font-size: 2.5rem;
+    padding: 4rem;
+}
+
+/* コンテンツ */
+.dream {
+    margin-top: 850px;
+    font-size: 2rem;
+}
+.main-text {
+    margin-top: 2.5rem;
+    font-size: 1.3rem;
+}
+
+/* 各区分けのタイトル */
+.grouptitle {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+/* 自己紹介並べ */
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.item-video {
+    width: 40%;
+    height: 30%;
+    object-fit: cover;
+    padding: .5rem;
+}
+.item {
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+
+/* WORKSアイテム */
+.grid_item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.link {
+    overflow: hidden;
+}
+.grid_img {
+    width: 766px;
+    height: 500px;
+    object-fit: cover;
+}
+.link > img {
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.link:hover > img {
+    transform:scale(1.15);
+}
+
+.grid_a {
+    font-size: 1.3rem;
+    color:#F6F7F6;
+}
+
+/* ボタン */
+.position{
+    margin-top:30px;
+    text-align: center;
+}
+
+.position a{
+    display: inline-block;
+    padding: .5rem;
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background: #4b8190;     /* 背景色 */
+    color: #f6f7f6;     /* 文字色 */
+    transition: .3s;         /* なめらか変化 */
+}
+
+.button a {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+/* WORKSページのアーティクル内 */
+.works-img {
+    width: 64.58%;
+    height: auto;
+    padding: 7rem 0 2rem 0;
+}
+.works-container {
+    display: flex;
+    align-items: center;
+    margin-left: 17.71%;
+}
+.works-h2 {
+    font-size: 2rem;
+}
+.works-p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    margin-left: 17.71%;
+    padding-bottom: 7rem;
+}
+.hash {
+    margin-left: 1rem;
+    background-color: #4b8190;
+    padding: 0 0.3rem 0 0.3rem;
+}
+
+/* フッター */
+footer {
+    background-color: #4b8190;
+    height: 21rem;
+}
+/* 「フッター」ブロック内のコンテナ*/
+footer .container {
+    padding-top: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 縦方向の中央ぞろえ */
+}
+.foot-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 2rem;
+    list-style: none;
+}
+.foot {
+    color: #f6f7f6;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.foot-nav a {
+    color: #f6f7f6;
+}
+.foot-nav a:hover {
+    color: #0bd;
+}
+.cright {
+    max-width: 90%;
+}
+.copy {
+    margin-top: 6rem;
+}
