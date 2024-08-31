@@ -206,6 +206,7 @@ header .container {
 
 /* フッター */
 footer {
+    margin-top: 8rem;
     background-color: #4b8190;
     height: 21rem;
 }
@@ -239,4 +240,8 @@ footer .container {
 }
 .copy {
     margin-top: 6rem;
+}
+
+.preparation{
+    margin-top:6rem;
 }
